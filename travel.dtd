@@ -1,0 +1,12 @@
+<!ELEMENT travel (airport | flight | passenger | reservation)*>
+<!ELEMENT airport (name)>
+    <!ATTLIST airport code ID #REQUIRED>
+<!ELEMENT flight (date,departureTime,arrivalTime)>
+    <!ATTLIST flight id ID  #REQUIRED
+                     from IDRef #REQUIRED    <!-- the code of the departure airport -->
+                     to IDRef #REQUIRED>     <!-- the code of the destination airport -->
+<!ELEMENT passenger (name,address)>
+    <!ATTLIST passenger ssn ID #REQUIRED>
+<!ELEMENT reservation (creditcard)>
+    <!ATTLIST reservation passenger IDRef #REQUIRED        <!-- the passenger ssn -->
+                          flight IDRef #REQUIRED>          <!-- the flight id -->

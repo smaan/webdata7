@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE travel SYSTEM "travel1.dtd">
+<travel>
+	<airport code="AP1">
+		<name>Los Angeles IA</name>
+	</airport>
+	<airport code="AP2">
+		<name>DFW</name>
+	</airport>
+	<airport code="AP3">
+		<name>JFK</name>
+	</airport>
+	<flight id="F1" from="AP1" to="AP2">
+		<date>11/20/2014</date>
+		<departureTime>09:10</departureTime>
+		<arrivalTime>11:55</arrivalTime>
+	</flight>
+	<flight id="F2" from="AP2" to="AP3">
+		<date>11/20/2014</date>
+		<departureTime>14:00</departureTime>
+		<arrivalTime>18:10</arrivalTime>
+	</flight>
+	<flight id="F3" from="AP2" to="AP3">
+		<date>11/20/2014</date>
+		<departureTime>04:00</departureTime>
+		<arrivalTime>08:10</arrivalTime>
+	</flight>
+	<passenger ssn="S1">
+		<name>David Maeir</name>
+		<address>SW St Arlington1</address>
+	</passenger>
+	<passenger ssn="S2">
+		<name>John Smith</name>
+		<address>SW St Arlington2</address>
+	</passenger>
+	<passenger ssn="S3">
+		<name>James Bond</name>
+		<address>SW St Arlington3</address>
+	</passenger>
+	<reservation flight="F1" passenger="S1">
+		<creditcard>4614-4561-7981</creditcard>
+	</reservation>
+	<reservation flight="F2" passenger="S1">
+		<creditcard>4614-4561-7981</creditcard>
+	</reservation>
+	<reservation flight="F1" passenger="S2">
+		<creditcard>4614-4561-7982</creditcard>
+	</reservation>
+	<reservation flight="F2" passenger="S2">
+		<creditcard>4614-4561-7982</creditcard>
+	</reservation>
+	<reservation flight="F3" passenger="S3">
+		<creditcard>4614-4561-7983</creditcard>
+	</reservation>
+</travel>
